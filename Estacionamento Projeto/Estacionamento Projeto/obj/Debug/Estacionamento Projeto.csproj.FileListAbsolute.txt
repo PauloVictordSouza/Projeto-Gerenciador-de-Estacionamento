@@ -1,0 +1,7 @@
+C:\Users\Usuario\source\repos\Estacionamento Projeto\Estacionamento Projeto\bin\Debug\Estacionamento Projeto.exe.config
+C:\Users\Usuario\source\repos\Estacionamento Projeto\Estacionamento Projeto\bin\Debug\Estacionamento Projeto.exe
+C:\Users\Usuario\source\repos\Estacionamento Projeto\Estacionamento Projeto\bin\Debug\Estacionamento Projeto.pdb
+C:\Users\Usuario\source\repos\Estacionamento Projeto\Estacionamento Projeto\obj\Debug\Estacionamento Projeto.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Estacionamento Projeto\Estacionamento Projeto\obj\Debug\Estacionamento Projeto.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Estacionamento Projeto\Estacionamento Projeto\obj\Debug\Estacionamento Projeto.exe
+C:\Users\Usuario\source\repos\Estacionamento Projeto\Estacionamento Projeto\obj\Debug\Estacionamento Projeto.pdb
