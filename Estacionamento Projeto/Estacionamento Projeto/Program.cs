@@ -45,22 +45,22 @@ namespace Estacionamento_Projeto
                 return;
             }
 
-            // Atualiza a hora de saída do cliente
+            
             cliente.horaSaida = horaSaida;
 
-            // Marca a vaga como disponível novamente
+            
             Vaga vagaDoCliente = vagas.FirstOrDefault(v => v.Numero == cliente.vaga);
             if (vagaDoCliente != null)
             {
                 vagaDoCliente.Ocupada = false;
             }
 
-            // Calcular a cobrança
+            
             DateTime entrada = DateTime.Parse(cliente.horaEntrada);
             DateTime saida = DateTime.Parse(horaSaida);
             double duracaoHoras = (saida - entrada).TotalHours;
-            double taxaPorHora = 5.00; // Exemplo: R$ 5,00 por hora
-            double valorTotal = Math.Ceiling(duracaoHoras) * taxaPorHora; // Arredonda para cima
+            double taxaPorHora = 5.00; //<- isso pode ser alterado de user pra user, é apenas o valor
+            double valorTotal = Math.Ceiling(duracaoHoras) * taxaPorHora; 
 
             Console.WriteLine($"Saída registrada com sucesso para {cliente.nome} às {cliente.horaSaida}.");
             Console.WriteLine($"Valor total a ser pago: R$ {valorTotal:F2}.");
@@ -152,7 +152,7 @@ namespace Estacionamento_Projeto
                 nome = nome,
                 horaEntrada = horaEntrada,
                 vaga = vagaNumero,
-                horaSaida = null // Inicializa como null, pois será preenchido ao registrar saída
+                horaSaida = null 
             };
 
             clientes.Add(novoCliente);
@@ -220,7 +220,7 @@ namespace Estacionamento_Projeto
                         ListarClientes();
                         break;
                     case 5:
-                        Environment.Exit(0); // Encerra o programa
+                        Environment.Exit(0); 
                         break;
                     default:
                         Console.WriteLine("Opção inválida! Tente novamente.");
